@@ -19,7 +19,8 @@ public class GeneradorRutas {
 	JCrystalMetaConfig config = JCrystalMetaConfig.getConfigFor(LocalPaths.ROOT);
 	MainPreprocessor preprocessor = new MainPreprocessor();
 	ICoreRunner coreRunner;
-	public GeneradorRutas() {
+	public GeneradorRutas(ICoreRunner coreRunner) {
+		this.coreRunner = coreRunner; 
 	}
 	public void generar() throws Exception{
 		SourceFolderVisitor.preCargarClases(LocalPaths.getSrcFile(), preprocessor::loadFile);
