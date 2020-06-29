@@ -1,5 +1,7 @@
 package jcrystal.process;
 
+import jcrystal.local.JCrystalMetaConfig;
+
 public interface ICoreRunner {
-	boolean dojCrystalProcess()throws Exception;
+	boolean dojCrystalProcess(JCrystalMetaConfig config)throws Exception;
 }

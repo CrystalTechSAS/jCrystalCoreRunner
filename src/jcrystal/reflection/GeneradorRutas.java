@@ -51,7 +51,7 @@ public class GeneradorRutas {
 			System.out.println("jCrystal deleted "+ numberDeleted+" .java files in the src/main/utils folder.");
 		}
 		try {
-			coreRunner.dojCrystalProcess();
+			coreRunner.dojCrystalProcess(config);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
